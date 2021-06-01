@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<title>
+</title>
+  <style>
+    a { 
+        text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    } 
+    a:hover { 
+        color: red; /* Ссылка красного цвета */
+    }
+    .legacy_version_no_support_container {
+        background-color: #ffc7c7;
+    }
+    .legacy_version_container {
+        background-color: #d9edad;
+    }
+    .stable_version_container {
+        background-color: #beedb7;
+    }
+    .dev_version_no_support_container {
+        background-color: #ace7f2;
+    } 
+  </style>
+ </head>
+<body>
+
+<h1>MICRORPC</h1>
+<br>
+<!--<a href="http://v065.urpc.ximc.ru/">Version 0.6</a> - устаревшая версия-->
+<!--<a href="/v07/">Version 0.7</a> - для старых проектов (UltraRay и EyePoint)-->
+<!--<a href="/v09/">Version 0.9</a> - версия с FreeRTOS для использования в новых проектах-->
+<?php
+echo 'Hello';
+?>
+
+<br>
+<br>
+<hr>
+    <a href="http://v06.urpc.ximc.ru/">Version 0.6</a> - <span class="legacy_version_no_support_container">Устаревшая версия без поддержки</span> Получена из v065 и v06. Не рекомендуется к использованию.
+<hr>
+    <a href="http://v07.urpc.ximc.ru/">Version 0.7</a> - <span class="legacy_version_container">Старая версия на поддержке</span> Используется для поддержки старых проектов.
+<hr>
+    <a href="http://v09.urpc.ximc.ru/">Version 0.9</a> - <span class="stable_version_container">Стабильная версия</span> Использовать для новых проектов. Прошивки с FreeRTOS.
+<hr>
+    <a href="http://v10.urpc.ximc.ru/">Version 0.10</a> - <span class="dev_version_no_support_container">Самая свежая версия</span> Используется в CI и содержит все самые новые фичи.
+<hr>
+
+</body>
+</html>
